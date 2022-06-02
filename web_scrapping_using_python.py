@@ -14,7 +14,7 @@ import numpy as np
 
 webpage=requests.get('https://www.ambitionbox.com/list-of-companies?page=1').text
 
-soup=BeautifulSoup(webpage,'lxml')
+soup=BeautifulSoup(webpage,'html')
 
 soup.find_all('h1')[0].text
 
